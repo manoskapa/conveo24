@@ -1,6 +1,6 @@
 import React from 'react';
-import './Home.css'; // Make sure the CSS path is correct
-import MyImage from '../assets/cinemapic.avif'; // Ensure the image path is correct
+import './Home.css'; 
+import MyImage from '../assets/cinemapic.avif'; 
 
 const Home = () => {
   return (

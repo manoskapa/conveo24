@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './pages/Home';
 import SearchPage from './pages/SearchPage';
 import Navigation from './components/Navigation'; 
-
+import Details from './pages/Details';
 function App() {
   return (
     <Router>
@@ -13,6 +13,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/search" element={<SearchPage />} /> 
+          <Route path="/details/:id" element={<Details />} />
+
           </Routes>
       </div>
     </Router>

@@ -1,9 +1,9 @@
 
   .image-banner {
-    background-image: url('../assets/cinemapic.avif'); /* Adjust the path as necessary */
+    background-image: url('../assets/cinemapic.avif'); 
     background-size: cover;
     background-position: center;
-    height: 100vh; /* Adjust the height as necessary */
+    height: 100vh; 
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -27,13 +27,13 @@
     top: 76%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #ffffff; /* Ensures the text is visible */
+    color: #ffffff; 
     text-align:center;
     z-index: 10; 
     width: 50%;
     padding: 0px 0px; 
-    background: rgb(50, 11, 11); /* Semi-transparent black background */
-    border-radius: 10px; /* Optional: adds rounded corners to the background */
+    background: rgb(50, 11, 11); 
+    border-radius: 10px; 
   }
   
  
