@@ -2,8 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './pages/Home';
-
-
+import SearchPage from './pages/SearchPage'; // Import the SearchPage component
 
 function App() {
   return (
@@ -17,11 +16,13 @@ function App() {
         </nav>
         <Routes>
           <Route path="/" element={<Home />} />
-        </Routes>
+          <Route path="/search" element={<SearchPage />} /> 
+          </Routes>
       </div>
     </Router>
   );
 }
+
 
 export default App;
 
