@@ -22,10 +22,13 @@ const SearchComponent = ({ onSearch }) => {
           value={query}
           onChange={handleInputChange}
         />
-        <div className="input-group-append">
-          <button className="btn btn-outline-secondary" type="submit">
+         <div className="input-group-append">
+         
+          <button type="submit" className="btn btn-dark">
+
             Search
           </button>
+
         </div>
       </div>
     </form>

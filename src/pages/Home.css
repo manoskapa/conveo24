@@ -1,0 +1,46 @@
+
+  .image-banner {
+    background-image: url('../assets/cinemapic.avif'); /* Adjust the path as necessary */
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Adjust the height as necessary */
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white; 
+  }
+  .container-fluid {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .img-fluid {
+    width: 100%;
+    height: auto;
+    display: fill; 
+  }
+  
+  .text-overlay {
+    position: absolute;
+    top: 76%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff; /* Ensures the text is visible */
+    text-align:center;
+    z-index: 10; 
+    width: 50%;
+    padding: 0px 0px; 
+    background: rgb(50, 11, 11); /* Semi-transparent black background */
+    border-radius: 10px; /* Optional: adds rounded corners to the background */
+  }
+  
+ 
+  
+  p {
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem; 
+    margin: 0.5em 0; 
+  }
+  

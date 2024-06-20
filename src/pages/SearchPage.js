@@ -2,16 +2,18 @@ import React, { useState } from 'react';
 import SearchComponent from '../components/SearchComponent';
 import { searchMovies } from '../services/apiService';
 import ElementCard from '../components/ElementCard';
-
+import './SearchPage.css';
 const SearchPage = () => {
   const [elements, setElements] = useState([]);
   const [error, setError] = useState(null);
+  const [message, setMessage] = useState(''); 
 
   const handleSearch = async (query) => {
     try {
       const data = await searchMovies(query);
       if(data.length==0){
-
+        setMessage('No results found. Please try another title'); 
+        setElements([]); 
       }
       setElements(data);
     } catch (error) {
@@ -21,7 +23,7 @@ const SearchPage = () => {
   };
 
   return (
-    <div className="container">
+    <div className="search-container">
       <h1>Search Movies</h1>
       <SearchComponent onSearch={handleSearch} />
       {error && <div>{error}</div>}
